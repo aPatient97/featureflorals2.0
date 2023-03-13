@@ -19,7 +19,7 @@ function MothersDay({setMothersDay}) {
         <h1>Mother's Day Tulips!</h1>
         <p>Get your flowers here. Delivery to TW1, TW8, TW9, TW10, W4, SW13 and SW14.</p>
         <div className="m-img-container">
-            <img src="/images/webp/gals/tulip-nice.webp" alt="a very large orange pink flowering tulip" />
+            <img src="/images/webp/tulip-nice.webp" alt="a very large orange pink flowering tulip" />
         </div>
         <Link to='/shop'>
             <button onClick={goToShop} className='buy-btn'>Buy now!</button>
