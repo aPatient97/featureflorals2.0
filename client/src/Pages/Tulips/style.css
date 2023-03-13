@@ -1,0 +1,72 @@
+p.shop-btn {
+    padding: 5em 1em 0em 1em;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+
+.product-image-container, .mixed-image-container {
+    position: relative;
+    margin: 1em 2em;
+    /* outline: 1px solid black; */
+    height: 40vh;
+    
+}
+
+
+.tulips1 {
+    background: url('../../../public/images/mobileProducts/tulips-front.webp');
+}
+
+.tulips2 {
+    background: url('../../../public/images/mobileProducts/tulips-shadow.webp');
+}
+
+.tulips3 {
+    background: url('../../../public/images/mobileProducts/tulips-side.webp');
+}
+
+.tulips4 {
+    background: url('../../../public/images/mobileProducts/tulips-top.webp');
+}
+
+.tulips1, .tulips2, .tulips3, .tulips4 {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+@media only screen and (min-width: 1000px) {
+    .tulips1 {
+        background: url(../../../public/images/dsk-prods/tulips-front.webp) center center;
+    }
+    .tulips2 {
+        background: url(../../../public/images/dsk-prods/tulips-shadow.webp) center center ;
+    }
+    .tulips3 {
+        background: url(../../../public/images/dsk-prods/tulips-side.webp) center center;
+    }
+    .tulips4 {
+        background: url(../../../public/images/dsk-prods/tulips-top.webp) center center;
+    }
+
+    .tulips1, .tulips2, .tulips3, .tulips4 {
+        height: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: contain;
+    
+    }
+
+    .product-image-container, .mixed-image-container {
+        height: 60vh;
+    }
+
+    p.shop-btn {
+        padding-top: 1em;
+    }
+}
+

@@ -1,0 +1,41 @@
+.banner-img {
+    display: grid;
+    height: 60vh;
+    background-color: rgba(245, 235, 224, 0.5);
+   }
+   
+   /* .one {
+    background: url(../../../public/images/rose-crop.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position:-40%;
+    margin: 1em 0em 1em 1em;
+  } */
+   
+   /* .two {
+     background: url(../../../public/images/feet.jpg) no-repeat center center fixed;
+     background-size: contain;
+     margin: 0em;
+   } */
+   
+   .three {
+    background: url(../../../public/images/webp/gallery/flowers.webp) no-repeat fixed;
+    background-size: cover;
+    /* background-position: 150%; */
+    background-position: 0px -100px;
+    margin: 0em ; 
+  }
+   
+@media only screen and (max-width: 550px) {
+  .banner-img {
+    height: 15vh;
+    background: url(../../../public/images/webp/gals/flowers.webp) no-repeat fixed;
+    background-size: cover;
+    /* background-position: 150%; */
+    /* background-position: 0px -100px; */
+    margin: 0em ;
+  }
+
+  .three {
+    display: none;
+  }
+}

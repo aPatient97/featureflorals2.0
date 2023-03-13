@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&family=Cormorant:wght@300&family=Italiana&family=Italianno&display=swap');
+
+*, html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* outline: 1px solid black; */
+}
+
+:root {
+  --background: #f5ebe0;
+  --nav: #e3d5ca;
+  --bg-text: rgba(245, 235, 224, 0.5);
+}
+
+body {
+  font-family: 'Italiana', serif;
+  background-color: white;
+}
+
+.root-layout {
+  max-width: 100vw;
+}
+
+.flex-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.break {
+  background-color: var(--background);
+  height: 9em;
+  display: grid;
+  place-items: center;
+}
+
+.break p {
+  font-size: 2em;
+  font-weight: 600;
+  padding: 0em 2em;
+  font-style: italic;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.center-text {
+  font-weight: 400;
+  padding: 1.5rem 2em -1rem 2em;
+  margin: 0em;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 6em;
+  font-family: 'Italianno', serif;
+}
+
+.c-text {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}

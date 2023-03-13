@@ -1,0 +1,31 @@
+.slider {
+    z-index: -1;
+    width: 100%;
+    height: 50vh;
+}
+
+  .slide1 {
+    background: url('../../../public/images/webp/gallery/urn-crop.webp') bottom/cover;
+  }
+  
+  .slide2 {
+    background: url('../../../public/images/webp/gallery/pink.webp') 50%/cover;
+  }
+  
+  .slide3 {
+    background: url('../../../public/images/webp/gallery/flowers.webp') 60%/cover;
+  }
+
+  .slide1, .slide2, .slide3 {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    top: 6vh;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  .active-pic {
+    opacity: 1;
+  }

@@ -1,0 +1,5 @@
+.payment-div {
+    display: grid;
+    place-items: center;
+    padding-top: 2em;
+}

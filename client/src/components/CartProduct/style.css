@@ -1,0 +1,10 @@
+.cart-product {
+    display: grid;
+    place-items: center;
+}
+
+button.remove-btn {
+    padding: 0.7em 2em;
+    border: none;
+    
+}

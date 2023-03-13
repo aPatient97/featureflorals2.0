@@ -1,0 +1,46 @@
+#quantity {
+    width: 4em;
+}
+
+@media only screen and (min-width: 760px) {
+    #message {
+        width: 40em;
+    }
+
+    button.cart-btn {
+        width: 20vw;
+    }
+
+
+
+}
+
+form.checkout-form {
+    padding: 1em;
+    margin: 1em 10em;
+    outline: 1px solid black;
+}
+
+.checkout-form input {
+    width: 20vw;
+    margin: 1em 2em;
+}
+
+.checkout-form textarea {
+    margin: 1em 2em;
+}
+
+button.cart-btn {
+    /* padding: 1em; */
+    margin: 1em;
+    width: 80vw;
+    height: 8vh;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5em;
+    background-color: var(--background);
+}
+
+button.cart-btn:hover {
+    background-color: var(--nav);
+}

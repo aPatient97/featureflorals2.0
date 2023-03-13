@@ -1,0 +1,18 @@
+.dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    gap: 0.2em;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.active-dot {
+    background-color: pink;
+}

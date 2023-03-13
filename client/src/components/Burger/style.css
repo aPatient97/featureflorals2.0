@@ -1,0 +1,38 @@
+.burger div{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-top: 0.25em;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    padding: 0.5em;
+}
+
+.toggle #line-1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+    
+}
+
+.toggle #line-2 {
+    opacity: 0;
+}
+
+.toggle #line-3 {
+    transform: rotate(+45deg) translate(-5px,-6px);
+
+}
+
+@media only screen and (min-width: 550px) {
+    .burger {
+        display: none;
+    }
+}

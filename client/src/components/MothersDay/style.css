@@ -1,0 +1,60 @@
+.md-popout {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: solid 1px black;
+    background-color: var(--background);
+    
+    width: 70vw;
+    height: 85vh;
+    top: 10vh;
+
+}
+
+.close-modal {
+    /* justify-self: flex-end;
+    align-self: flex-end; */
+    width: 5%;
+    height: 5%;
+    place-self: flex-end;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+.md-popout h1,p {
+    padding: 0.5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.md-popout img {    
+    max-height: 300px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.m-img-container {
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button.buy-btn {
+    padding: 1.5em 4em;
+    font-weight: 600;
+    font-family: 'Italiana', serif;
+    text-transform: uppercase;
+    cursor: pointer;
+   
+}
+
+button.buy-btn:hover {
+    background-color: var(--background);
+    background-color: white;
+    
+}

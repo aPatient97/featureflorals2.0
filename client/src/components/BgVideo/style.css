@@ -1,0 +1,28 @@
+#bg-video {
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -10;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.parallax-vid {
+    width: 100%;
+    height: 30vw;
+  }
+
+@media only screen and (max-width: 500px) {
+    #bg-video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        top: 0%;
+        /* position:initial; */
+    }
+
+    .parallax-vid {
+        height: 40vh;
+        
+    }
+}

@@ -1,0 +1,29 @@
+header h1 {
+    font-size: 4em;
+    font-weight: 10;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-family: 'Italiana', serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant', serif;
+    display: grid;
+    color: rgb(225, 220, 220);
+    color: white;
+    letter-spacing: 1px;
+  }
+  
+  h1#florals {
+    /* padding-left: 0.8em;
+    margin-top: -0.5em; */
+  }
+  
+  h1#feature {
+    /* padding-top: 0.2em; */
+  }
+
+  @media only screen and (max-width: 550px) {
+    header h1 {
+      font-size: 7em;
+    }
+  }

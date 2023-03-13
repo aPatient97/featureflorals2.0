@@ -1,0 +1,100 @@
+.multi-carousel {
+    display: flex;
+    margin: 0em;
+    gap: 1em;
+    height: 100%;
+    width: 100%;
+}
+
+.image-container {
+    /* width: 23vw; */
+    width: 100%;
+    height: 40vh;
+    background-color: var(--background);
+   
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrows-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.arrows {
+    cursor: pointer;
+    /* height: 20px; */
+    font-size: 3em;
+}
+
+.left-arrow {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.right-arrow {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+
+@media only screen and (max-width: 760px) {
+    /* .multi-carousel {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .image-container {
+
+    } */
+}
+
+
+.multi1 {
+    background: url('../../../public/images/webp/w600/dahlia-pot.webp')
+}
+.multi2 {
+    background: url('../../../public/images/webp/w600/IMG_5407.webp')
+}
+.multi3 {
+    background: url('../../../public/images/webp/w600/daisys.webp')
+}
+.multi4 {
+    background: url('../../../public/images/webp/w600/flower-bowl-flipped.webp')
+}
+.multi5 {
+    background: url('../../../public/images/webp/w600/gyp.webp')
+}
+.multi6 {
+    background: url('../../../public/images/webp/w600/lilac.webp')
+}
+.multi7 {
+    background: url('../../../public/images/webp/w600/sb-park.webp')
+}
+.multi8 {
+    background: url('../../../public/images/webp/w600/pink.webp')
+}
+
+.multi1, .multi2, .multi3, .multi4, .multi5, .multi6, .multi7, .multi8 {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.multi-image-container {
+    position: relative;
+    margin: 1em 2em;
+    /* outline: 1px solid black; */
+    height: 40vh;
+    width: 100%;
+}

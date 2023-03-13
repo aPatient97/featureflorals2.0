@@ -1,0 +1,63 @@
+#fontless {
+    font-family: 'Italliano', cursive;
+    font-weight: 200;
+}
+
+p#lighter {
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+
+.break {
+    background-color: var(--background);
+    height: 9em;
+    display: grid;
+    place-items: center;
+    padding: 1em;
+  }
+  
+  .break p {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0em 2em;
+    font-style: italic;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+  }
+
+  .background-image {
+    background:url(../../../public/images/landingflowers.webp) no-repeat center center fixed;
+    /* background:url(../../../public/images/IMG_9229.jpg) no-repeat center bottom fixed; */
+
+    background-size: cover;
+    height: 94vh;
+  }
+
+ @media only screen and (max-width: 550px) {
+
+  .background-image {
+    height: 60vh;
+  }
+
+  .break p {
+    font-size: 1em;
+    background-color: var(--background);
+    padding: 0em 0.5em;
+  }
+
+  p#lighter {
+    font-size: 0.8em;
+  }
+
+  .break-container {
+    background-color: white;
+    padding: 0.5em;
+  }
+  .home-btns {
+    display: grid;
+    place-items: center;
+    /* margin: 1em; */
+  }
+ 
+ }

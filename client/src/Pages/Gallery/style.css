@@ -1,0 +1,12 @@
+.quote {
+    font-size: clamp(1em, 1.5em, 1.8em);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 1em 0.5em;
+    margin: 1em 0.5em;
+    text-align: center;
+    background-color: var(--bg-text);
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+}  
