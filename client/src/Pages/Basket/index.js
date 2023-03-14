@@ -12,20 +12,23 @@ function Basket() {
 
     const checkout = async () => {
         console.log('checking out')
-        await fetch('https://feature-florals-server.herokuapp.com', {
+        await fetch('https://feature-florals-server.herokuapp.com/checkout', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({items: cart.items})
-        }).then((response) => {
-            console.log(response)
-            return response.json();
-        }).then((response) => {
-            if(response.url) {
-                window.location.assign(response.url); // Forwarding user to Stripe
+        }).then((res) => {
+           return res.json()
+        }).then((data) => {
+            //console.log(data)
+            if(data.url) {
+                window.location.assign(data.url); // Forwarding user to Stripe
             }
         })
+        .catch((error) => {
+            console.error("Error:", error);
+          })
     }
   return (
     <>
