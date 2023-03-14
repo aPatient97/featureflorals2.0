@@ -12,7 +12,7 @@ function Basket() {
 
     const checkout = async () => {
         console.log('checking out')
-        await fetch('http://localhost:4000/checkout', {
+        await fetch('https://feature-florals-server.herokuapp.com/', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
