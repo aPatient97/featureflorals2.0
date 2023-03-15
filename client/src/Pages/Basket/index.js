@@ -69,10 +69,10 @@ function Basket() {
             <div className="postcodes">
                 <p>We currently deliver to the following postcodes:</p> 
                 <p> TW2, TW3, TW4, TW5, TW7, TW8, TW9, TW10, TW11, TW12, TW13, TW14, TW16<br /> W3, W4, W5, W6, W7, W12, W13<br />SW13, SW14, SW15<br />KT1, KT2, KT3, KT5, KT6, KT7, KT8 </p>
-                <p>Please email us at <a href='mailto:featureflorals@gmail.co.uk' >featureflorals@gmail.com</a> or via our contact form if your address is not listed.</p> 
+                <p>Alternatively, collection from our studio in TW9</p>
+                <p>If your address is not listed above, please email us at <a href='mailto:featureflorals@gmail.co.uk' >featureflorals@gmail.com</a> or via our contact form.</p> 
                 <p>Enter the first half of the delivery postcode to check if we can deliver:</p>
                 <input type="text" id='postcode' onKeyUp={setPostCode} autoComplete='off' maxLength={5}/>
-                <p>If the checkout button doesn't work, please email us or use the contact form to order.</p>
             </div>
 
         { productsCount > 0 ? 
