@@ -38,13 +38,17 @@ function Basket() {
         console.log(postcode)
     }
 
-    // const postcodeArray = ['TW2', 'TW3', 'TW4', 'TW5', 'TW7', 'TW8', 'TW9', 'TW10', 'TW11', 'TW12', 'TW13', 'TW14', 'TW16', 'W3', 'W4', 'W5', 'W6', 'W7', 'W12', 'W13', 'SW13', 'SW14', 'SW15', 'KT1', 'KT2', 'KT3', 'KT5', 'KT6', 'KT7', 'KT8']
+    const postcodeArray = ['TW2', 'TW3', 'TW4', 'TW5', 'TW7', 'TW8', 'TW9', 'TW10', 'TW11', 'TW12', 'TW13', 'TW14', 'TW16', 'W3', 'W4', 'W5', 'W6', 'W7', 'W12', 'W13', 'SW13', 'SW14', 'SW15', 'KT1', 'KT2', 'KT3', 'KT5', 'KT6', 'KT7', 'KT8']
 
-    // const checkPostcode = () => {
-    //     // postcodeArray.includes(postcode) ? checkout() : alert('Postcode not in range')
-    //     console.log('checking')
-    // }
+    const checkPostcode = () => {
+        postcodeArray.includes(postcode) ? checkout() : disableButton()
+        
+    }
 
+    const disableButton = () => {
+        const btn = document.querySelector('.checkout-btn')
+        btn.disabled = true
+    }
     // const closePcModal = () => {
     //     const modal = document.querySelector('.pc-modal')
     //     modal.remove()
@@ -86,7 +90,7 @@ function Basket() {
             <h2>Total: £ {cart.getTotalCost().toFixed(2)}</h2>
             
             <div className="btn-div">
-                <button className='checkout-btn' onClick={checkout}>Checkout</button>
+                <button className='checkout-btn' onClick={checkPostcode}>Checkout</button>
             </div>
 
         </div>
