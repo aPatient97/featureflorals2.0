@@ -4,23 +4,31 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     background-color: linen;
     width: 40vw;
     height: 65vh;
     top: 10vh;
     /* color: white; */
-
+    border-radius: 10px;
+    z-index: 110;
 }
 
 .close-modal {
     /* justify-self: flex-end;
     align-self: flex-end; */
-    width: 5%;
-    height: 5%;
+    /* width: 5%;
+    height: 5%; */
     place-self: flex-end;
-    margin: 0.5em;
+    margin: 0.5em 0.5em 0em 0.5em;
     cursor: pointer;
+    border-radius: 50%;
+    /* border: solid 1px black; */
+    font-size: 1em;
+}
+
+.close-modal:hover {
+    text-decoration: underline;
 }
 
 .md-popout h1, .md-popout p {
@@ -51,13 +59,12 @@ button.buy-btn {
     text-transform: uppercase;
     cursor: pointer;
     margin: 1.5em;
+    background: white;
    
 }
 
 button.buy-btn:hover {
-    background-color: var(--background);
-    background-color: white;
-    
+    background-color: linen;
 }
 
 .modal-pic {
@@ -72,4 +79,17 @@ button.buy-btn:hover {
     .md-popout {
         width: 90%;
     }
+}
+
+div.fader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* height: 100vh; */
+    z-index: 100;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    /* background: transparent; */
+  
 }
