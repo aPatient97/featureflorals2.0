@@ -23,8 +23,8 @@ function About() {
             </div>
             <div className='img-container'>
               <img src="/images/about-img/shannon-flowers.webp" alt="Shannon Clifford in the Feature Florals/featureflorals studio surrounded by flowers." />
-              <img src="" alt="" />
-              <img src="" alt="" />
+              {/* <img src="" alt="" />
+              <img src="" alt="" /> */}
             </div>
         </div>
         {/* <div className="insta-container">
