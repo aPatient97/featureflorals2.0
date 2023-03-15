@@ -42,14 +42,14 @@ function Basket() {
 
     const checkPostcode = () => {
         console.log(postcode, 'clicked')
-        postcodeArray.includes(postcode) ? checkout() : disableButton()
+        postcodeArray.includes(postcode) ? checkout() : console.log('postcode not in range')
         
     }
 
-    const disableButton = () => {
-        const btn = document.querySelector('.checkout-btn')
-        btn.disabled = true
-    }
+    // const disableButton = () => {
+    //     const btn = document.querySelector('.checkout-btn')
+    //     btn.disabled = true
+    // }
     // const closePcModal = () => {
     //     const modal = document.querySelector('.pc-modal')
     //     modal.remove()
