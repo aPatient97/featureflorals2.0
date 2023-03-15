@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react'
+import React, { useContext } from 'react'
 import './style.css'
 import { CartContext } from '../../cartContext'
 //import { productsArray } from '../../productStore'
@@ -10,14 +10,10 @@ function Basket() {
 
     const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0)
 
-    let postcode = useRef(null)
-    let match;
+    let postcode;
 
     const checkout = async () => {
         console.log('checking out')
-        // checkPostcode(postcode)
-
-        // match ? 
         await fetch('https://feature-florals-server.herokuapp.com/checkout', {
             method: "POST",
             headers: {
@@ -35,31 +31,40 @@ function Basket() {
         .catch((error) => {
             console.error("Error:", error);
           })
-        // :
-        // alert('Postcode not in range. Please enter a valid postcode.')
     }
 
-    const setPostcode = () => {
+    const setPostCode = () => {
         postcode = document.querySelector('#postcode').value.toUpperCase()
-        console.log(postcode)
-       
     }
 
     const postcodeArray = ['TW2', 'TW3', 'TW4', 'TW5', 'TW7', 'TW8', 'TW9', 'TW10', 'TW11', 'TW12', 'TW13', 'TW14', 'TW16', 'W3', 'W4', 'W5', 'W6', 'W7', 'W12', 'W13', 'SW13', 'SW14', 'SW15', 'KT1', 'KT2', 'KT3', 'KT5', 'KT6', 'KT7', 'KT8']
 
-    const checkPostcode = (postcode) => {
-        postcodeArray.includes(postcode) ? match = true : match = false
+    const checkPostcode = () => {
+        postcodeArray.includes(postcode) ? checkout() : alert('Postcode not in range')
     }
+
+    // const closePcModal = () => {
+    //     const modal = document.querySelector('.pc-modal')
+    //     modal.remove()
+    // }
 
   return (
     <>
+
+        {/* {modal && (
+            <div className="pc-modal">
+                <p>Postcode is not in range!</p>
+                <p>Please try again.</p>
+                <button onClick={closePcModal}>ok</button>
+            </div>
+        )} */}
         <h1 className='checkout c-text'>Checkout </h1>
             <div className="postcodes">
                 <p>We currently deliver to the following postcodes:</p> 
                 <p> TW2, TW3, TW4, TW5, TW7, TW8, TW9, TW10, TW11, TW12, TW13, TW14, TW16<br /> W3, W4, W5, W6, W7, W12, W13<br />SW13, SW14, SW15<br />KT1, KT2, KT3, KT5, KT6, KT7, KT8 </p>
                 <p>Please email us at <a href='mailto:featureflorals@gmail.co.uk' >featureflorals@gmail.com</a> or via our contact form if your address is not listed.</p> 
                 <p>Enter the first half of the delivery postcode to check if we can deliver:</p>
-                <input type="text" id='postcode' onKeyUp={setPostcode} autoComplete='off' maxLength={5}/>
+                <input type="text" id='postcode' onKeyUp={setPostCode} autoComplete='off' maxLength={5}/>
                 <p>If the checkout button doesn't work, please email us or use the contact form to order.</p>
             </div>
 
@@ -79,7 +84,7 @@ function Basket() {
             <h2>Total: £ {cart.getTotalCost().toFixed(2)}</h2>
             
             <div className="btn-div">
-                <button className='checkout-btn' onClick={checkout}>Checkout</button>
+                <button className='checkout-btn' onClick={checkPostcode}>Checkout</button>
             </div>
 
         </div>

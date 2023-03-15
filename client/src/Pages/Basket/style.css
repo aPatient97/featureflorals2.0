@@ -66,3 +66,7 @@ input#postcode {
 .center-basket p {
     padding: 1em;
 }
+
+.pc-modal {
+    outline: 1px solid black;
+}
