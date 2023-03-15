@@ -1,7 +1,7 @@
 .about {
     display: flex;
     margin: 2em 3em;
-    height: 80vh;
+    height: 70vh;
     gap: 3em;
 }
 
@@ -49,7 +49,7 @@ img.about-img3 {
 
 .about-ps p{
     font-size: 1em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
