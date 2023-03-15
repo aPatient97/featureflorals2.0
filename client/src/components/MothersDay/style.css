@@ -23,7 +23,7 @@
     cursor: pointer;
 }
 
-.md-popout h1,p {
+.md-popout h1, .md-popout p {
     padding: 0.5em;
     text-align: center;
     font-weight: 600;

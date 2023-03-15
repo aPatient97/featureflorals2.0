@@ -12,11 +12,14 @@ function CartProduct(props) {
   return (
     
     <div className="cart-product">
+      <div className="cart-item">
         <h3>{productData.title}</h3>
         <p>{quantity} total</p>
         <p>£{ (quantity * productData.price).toFixed(2)}</p>
-        <button className='remove-btn' onClick={() => cart.deleteFromCart(id)}>Remove</button>
-        <hr />
+      </div>
+        
+          <button className='remove-btn' onClick={() => cart.deleteFromCart(id)}>Delete</button>
+        
     </div>
        
 

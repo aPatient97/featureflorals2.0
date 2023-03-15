@@ -27,6 +27,7 @@ export default function AddToBasketForm({product}) {
   }
   
   console.log(document.querySelector('#quantity')?.value)
+  
   return (
     <form className="checkout-form">
         <label htmlFor="quantity">Quantity</label>
