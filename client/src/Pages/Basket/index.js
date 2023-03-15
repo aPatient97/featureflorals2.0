@@ -15,9 +15,9 @@ function Basket() {
 
     const checkout = async () => {
         console.log('checking out')
-        checkPostcode(postcode)
+        // checkPostcode(postcode)
 
-        match ? 
+        // match ? 
         await fetch('https://feature-florals-server.herokuapp.com/checkout', {
             method: "POST",
             headers: {
@@ -35,8 +35,8 @@ function Basket() {
         .catch((error) => {
             console.error("Error:", error);
           })
-        :
-        alert('Postcode not in range. Please enter a valid postcode.')
+        // :
+        // alert('Postcode not in range. Please enter a valid postcode.')
     }
 
     const setPostcode = () => {
