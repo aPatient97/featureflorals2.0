@@ -41,6 +41,7 @@ function Basket() {
     const postcodeArray = ['TW2', 'TW3', 'TW4', 'TW5', 'TW7', 'TW8', 'TW9', 'TW10', 'TW11', 'TW12', 'TW13', 'TW14', 'TW16', 'W3', 'W4', 'W5', 'W6', 'W7', 'W12', 'W13', 'SW13', 'SW14', 'SW15', 'KT1', 'KT2', 'KT3', 'KT5', 'KT6', 'KT7', 'KT8']
 
     const checkPostcode = () => {
+        console.log(postcode, 'clicked')
         postcodeArray.includes(postcode) ? checkout() : disableButton()
         
     }
