@@ -16,14 +16,14 @@ function MothersDay({setMothersDay}) {
    <div className="flex">
     <div className="md-popout">
         <button onClick={closeModal} className='close-modal'>X</button>
-        <h1>Mother's Day Tulips!</h1>
-        <p>Get your flowers here. Delivery to TW1, TW8, TW9, TW10, W4, SW13 and SW14.</p>
-        <div className="m-img-container">
-            <img src="/images/webp/tulip-nice.webp" alt="a very large orange pink flowering tulip" />
-        </div>
+        <h1>Mothers' Day Flowers</h1>
+        <p>Shop seasonal for this Mothers' Day via our web shop</p>
         <Link to='/shop'>
-            <button onClick={goToShop} className='buy-btn'>Buy now!</button>
+            <button onClick={goToShop} className='buy-btn'>view options</button>
         </Link>
+        <div className="modal-pic">
+
+        </div>
     
     </div>
    </div>

@@ -38,7 +38,7 @@ function Home() {
     <div className='break-container'>
       <div className="break">
         <p>Passionate about sustainable practises <span id='fontless'>&</span> working with the seasons</p>
-        <p id='lighter'> Inspired by the flourishing beauty of untouched meadows and idyllic country gardens.</p>
+        {/* <p id='lighter'> Inspired by the flourishing beauty of untouched meadows and idyllic country gardens.</p> */}
       </div>
     </div>
     {/* <div className="parallax-vid">

@@ -2,6 +2,7 @@
     display: grid;
     height: 60vh;
     background-color: rgba(245, 235, 224, 0.5);
+    
    }
    
    /* .one {
@@ -27,15 +28,18 @@
    
 @media only screen and (max-width: 550px) {
   .banner-img {
-    height: 15vh;
-    background: url(../../../public/images/webp/gals/flowers.webp) no-repeat fixed;
-    background-size: cover;
+    height: 25vh;
+    position: relative;
+    margin-top: 1em;
+    background-color: transparent;
     /* background-position: 150%; */
     /* background-position: 0px -100px; */
-    margin: 0em ;
+    /* margin-top: 1em ; */
   }
 
   .three {
-    display: none;
+    height: 100%;
+    background: url(../../../public/images/webp/gals/flowers.webp) no-repeat center center;
+    background-size: contain;
   }
 }

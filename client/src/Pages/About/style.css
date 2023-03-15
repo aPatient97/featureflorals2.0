@@ -1,7 +1,8 @@
 .about {
     display: flex;
     margin: 2em 3em;
-    height: 70vh;
+    height: 80vh;
+    gap: 3em;
 }
 
 .center-text {
@@ -9,22 +10,36 @@
 }
 
 .about-ps {
-    padding: 1em 4em;
+    padding: 1em 2em;
     background-color: var(--bg-text);
     width: 100%;
     height: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .img-container {
     width: 100%;
     height: 100%;
+    position: relative;
 } 
 
-.about-img {
-    width: 100%;
-    object-fit: cover;
-    max-height: 100%;
+img.about-img1 {
+    position: absolute;
+
 }
+
+img.about-img2 {
+    position: absolute;
+
+}
+
+img.about-img3 {
+    position: absolute;
+
+}
+
+
 
 .about-ps p{
     font-size: 1em;

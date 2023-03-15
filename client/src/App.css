@@ -9,9 +9,9 @@
 }
 
 :root {
-  --background: #f5ebe0;
-  --nav: #e3d5ca;
-  --bg-text: rgba(245, 235, 224, 0.5);
+  --background: linen;
+  --nav: linen;
+  --bg-text: linen;
 }
 
 body {
