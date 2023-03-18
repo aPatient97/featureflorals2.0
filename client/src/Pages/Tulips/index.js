@@ -85,6 +85,7 @@ function Tulips() {
 
           <h1 className='c-text'>Mothers' Day Tulips</h1>
           <h2 className='c-text'>£32.00</h2>
+          
           <div className="product-image-container">
             {slides.map((x, index) => {
                   return (

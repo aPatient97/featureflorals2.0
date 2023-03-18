@@ -37,7 +37,7 @@ export default function AddToBasketForm({product}) {
         </textarea>
         
         <Link to='/basket'>
-          <button type="button" className='cart-btn pointer' onClick={handleClick}>Add to basket</button>
+          <button type="button" className='cart-btn pointer' onClick={handleClick} disabled>sold out</button>
         </Link>
       </form>
   )

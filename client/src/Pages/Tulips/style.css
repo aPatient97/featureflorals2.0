@@ -68,5 +68,12 @@ p.shop-btn {
     p.shop-btn {
         padding-top: 1em;
     }
+
+    div.row {
+        display: flex;
+    }
+    div.column {
+        display: grid;
+    }
 }
 
