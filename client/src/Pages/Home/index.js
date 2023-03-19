@@ -7,6 +7,7 @@ import InstaSVG from '../../components/InstaSVG';
 import MultiCarousel from '../../components/MultiCarousel';
 import MothersDay from '../../components/MothersDay';
 import Contact from '../../components/Contact';
+import ScrollDown from '../../components/ScrollDown';
 
 function Home() {
 
@@ -19,9 +20,28 @@ function Home() {
       sessionStorage.setItem('viewed', 'modal has rendered')
       console.log(sessionStorage.getItem('viewed'))
    }
-    
+   const bgImg = document.querySelector('.background-image')
+   bgImg.addEventListener('wheel', handleWheel, {passive: false})
+   
+   // eslint-disable-next-line
   }, [])
 
+  const scrollDown = (e) => {
+    const destination = document.querySelector('.break-container')
+    destination && destination.scrollIntoView({ behaviour: 'smooth' })
+    // const bgImg = document.querySelector('.background-image')
+    // bgImg.addEventListener('wheel', e => e.preventDefault(), { passive: false})
+  }
+
+  const handleWheel = (e) => {
+    e.preventDefault()
+    scrollDown(e)
+    
+    const bgImg = document.querySelector('.background-image')
+
+    bgImg.removeEventListener('wheel', handleWheel)
+}
+  
   return (
 
     <>
@@ -30,10 +50,11 @@ function Home() {
       <MothersDay setMothersDay={setMothersDay}/>
     )}
 
-    <div className="background-image">
+    <div className="background-image" >
       {/* <div className='flex-row'>
         <Header />       
       </div> */}
+      <ScrollDown />
     </div>
     <div className='break-container'>
       <div className="break">

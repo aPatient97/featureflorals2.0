@@ -1,0 +1,16 @@
+div.scroll-down {
+    position: absolute;
+    bottom: 5px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.scroll-down p {
+    font-size: 1.5em;
+}
+
+div.scroll-down svg:hover, div.scroll-down p:hover {
+    color: white;
+    fill: white;
+}

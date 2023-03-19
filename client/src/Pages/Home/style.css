@@ -29,7 +29,7 @@ p#lighter {
   .background-image {
     background:url(../../../public/images/landingflowers.webp) no-repeat center center fixed;
     /* background:url(../../../public/images/IMG_9229.jpg) no-repeat center bottom fixed; */
-
+    /* touch-action: none; */
     background-size: cover;
     height: 94vh;
   }
@@ -37,7 +37,8 @@ p#lighter {
  @media only screen and (max-width: 550px) {
 
   .background-image {
-    height: 60vh;
+    height: 100vh;
+    background-attachment: scroll;
   }
 
   .break p {
