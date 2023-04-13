@@ -4,7 +4,7 @@
 
 @media only screen and (min-width: 760px) {
     #message {
-        width: 40em;
+        width: 22.5em;
     }
 
     button.cart-btn {
@@ -17,6 +17,7 @@
 
 form.checkout-form {
     padding: 1em;
+    /* outline: 1px solid red; */
     
 }
 
@@ -32,7 +33,7 @@ form.checkout-form {
 button.cart-btn {
     /* padding: 1em; */
     margin: 1em;
-    width: 80vw;
+    /* width: 80vw; */
     height: 8vh;
     border-radius: 5px;
     border: none;

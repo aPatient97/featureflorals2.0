@@ -85,21 +85,26 @@ function Tulips() {
 
           <h1 className='c-text'>Mothers' Day Tulips</h1>
           <h2 className='c-text'>£32.00</h2>
-          
-          <div className="product-image-container">
-            {slides.map((x, index) => {
+
+
+          <div className="flex-row">
+            
+              <div className="product-image-container">
+                {slides.map((x, index) => {
                   return (
-                      <div 
-                      key={x} 
-                      className={slide === index ? `tulips${index + 1} active-pic` : `tulips${index + 1}`}>
-                      </div>
-                  )
-              })
-            }
+                    <div 
+                    key={x} 
+                    className={slide === index ? `tulips${index + 1} active-pic` : `tulips${index + 1}`}>
+                          </div>
+                      )
+                    })
+                  }
+              <CarouselDots slide={slide} slides={slides} />
+              </div>
+            
+            
+            <AddToBasketForm product={productsArray[0]}/>
           </div>
-          <CarouselDots slide={slide} slides={slides} />
-          
-          <AddToBasketForm product={productsArray[0]}/>
         
       </>
 }

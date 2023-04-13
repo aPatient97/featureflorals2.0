@@ -22,9 +22,9 @@ function About() {
               <p>We are always up for a coffee and a cake with like-minded creatives, so do reach out if you would like to meet and collaborate.</p>
             </div>
             <div className='img-container'>
-              <img src="/images/about-img/shannon-flowers.webp" alt="Shannon Clifford in the Feature Florals/featureflorals studio surrounded by flowers." />
-              {/* <img src="" alt="" />
-              <img src="" alt="" /> */}
+              <img className='about-img1' src="/images/about-img/shannon-flowers.webp" alt="Shannon Clifford in the Feature Florals / featureflorals studio surrounded by flowers." />
+              <img className='about-img2' src="/images/about-img/shan-front.webp" alt="A front shot of featureflorals holding a bouquet of flowers with a digital camera" />
+              <img className='about-img3' src="/images/about-img/shan-front-cam.webp" alt="A front shot of featureflorals holding a bouquet of flowers with a digital camera" />
             </div>
         </div>
         {/* <div className="insta-container">

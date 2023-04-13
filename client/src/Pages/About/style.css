@@ -21,35 +21,38 @@
 .img-container {
     width: 100%;
     height: 100%;
-    position: relative;
+    /* position: relative; */
 } 
 
-.img-container img {
-    width: 100%;
+img.about-img1, img.about-img2, img.about-img3 {
+    /* width: 65%;
+    position: absolute;
     height: 100%;
+    object-fit: contain; */
+    width: 100%;
     object-fit: contain;
 }
 
-img.about-img1 {
-    position: absolute;
-
+/* img.about-img1 {
+   top: -22.2%;
+   left: 0%;
+   z-index: 10;
 }
 
 img.about-img2 {
-    position: absolute;
-
+   z-index: 11;
+   top: 20%;
+   left: 20%;
 }
 
 img.about-img3 {
-    position: absolute;
-
-}
-
-
+    z-index: 12;
+    right: 0%;
+    bottom: -70%;
+} */
 
 .about-ps p{
     font-size: 1em;
-    /* padding-bottom: 1em; */
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
@@ -76,6 +79,7 @@ p#no-pad {
 
     .about {
         display: grid;
+        margin: 1.5em;
     }
 
     .cursive-font {
@@ -85,6 +89,12 @@ p#no-pad {
 
     .about-ps {
         padding: 1em 2em;
+        /* text-align: left;
+        outline: 1px solid black; */
+    }
+
+    .about-ps p {
+        /* text-align: left; */
     }
 
     .insta-container {
