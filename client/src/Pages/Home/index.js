@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import UrlButton from '../../components/UrlButton';
 import InstaButton from '../../components/InstaButon';
 import './style.css'
 import ContactForm from '../../components/ContactForm';
 import InstaSVG from '../../components/InstaSVG';
 import MultiCarousel from '../../components/MultiCarousel';
-import MothersDay from '../../components/MothersDay';
+// import MothersDay from '../../components/MothersDay';
 import Contact from '../../components/Contact';
 import ScrollDown from '../../components/ScrollDown';
 
 function Home() {
 
-  const [mothersDay, setMothersDay] = useState(null)
+  // const [mothersDay, setMothersDay] = useState(null)
 
   useEffect(() => {
     
-   if (sessionStorage.getItem('viewed') === null) {
-     setMothersDay(true)
-      sessionStorage.setItem('viewed', 'modal has rendered')
-      console.log(sessionStorage.getItem('viewed'))
-   }
+  //  if (sessionStorage.getItem('viewed') === null) {
+  //    setMothersDay(true)
+  //     sessionStorage.setItem('viewed', 'modal has rendered')
+  //     console.log(sessionStorage.getItem('viewed'))
+  //  }
    const bgImg = document.querySelector('.background-image')
    bgImg.addEventListener('wheel', handleWheel, {passive: false})
    
@@ -45,10 +45,10 @@ function Home() {
   return (
 
     <>
-
-    { mothersDay && (
+{/* Popup modal below */}
+    {/* { mothersDay && (
       <MothersDay setMothersDay={setMothersDay}/>
-    )}
+    )} */} 
 
     <div className="background-image" >
       {/* <div className='flex-row'>
